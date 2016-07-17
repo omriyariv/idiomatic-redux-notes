@@ -10,7 +10,7 @@ For a more thorough summary of the course I recommend going through [this repo](
 ## 02. Supplying the Initial State
 - initial state may be passed inside `createStore` and will override the default value in the reducer
 - specifying the full state tree in `createStore` is discouraged as it breaks encapsulation
-- however, if it's only hydrating persisted data created by redux itself, then it's perfectly fine as encapsulation is still kept.
+- however, if it's only hydrating persisted data created by redux itself, then it's perfectly fine as encapsulation is still kept
 
 ## 03. Persisting the State to the Local Storage
 - localStorage may be used to persist data
@@ -100,7 +100,7 @@ store => next => enhancedDispatch
 
 ## 19. Updating the State with the Fetched Data
 - refactoring the reducers to deal with data that is fetched incrementally from the backend API
-- the store now has a lookup table of todosById and arrays of idsByFilter for every filter
+- the store now has a lookup table of `todosById` and arrays of `idsByFilter` for every filter
 
 ## 20. Refactoring the Reducers
 - refactoring reducers to be more DRY
