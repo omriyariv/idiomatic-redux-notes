@@ -122,7 +122,11 @@ store => next => enhancedDispatch
 - as a convention, it's convenient to always return a promise even if the API hasn't been called
 
 ## 24. Displaying Error Messages
-- WIP
+- when writing thunks, we can leverage the 2nd argument of the `then` method (the rejection handler) to dispatch an error action
+- for better consistency and clarity we can postfix async actions with `REQUEST/SUCCESS/FAILURE`
+- we handle the error action in a combined reducer which is for setting and clearing the error message
+- a reusable error message component with `errorMessage, onRetry` props is rendered whenever we get a truthy error property
+- using `catch` instead of using the rejection callback has a downside where it will also catch any errors thrown by reducers or components that are subscribed to the store
 
 ## 25. Creating Data on the Server
 - WIP
