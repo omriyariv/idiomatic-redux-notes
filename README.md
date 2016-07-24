@@ -136,4 +136,6 @@ store => next => enhancedDispatch
 - this helps reduce code and avoid writing special case handlers in reducers
 
 ## 27. Updating Data on the Server
-- WIP
+- completes the app by connecting toggleTodo to a backend endpoint that updates the data on the server
+- because we introduced `normalizr` before, the `byId` reducer doesn't need to change
+- we still need to update the all/active/completed lists when the operation is successful
