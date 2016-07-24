@@ -132,7 +132,8 @@ store => next => enhancedDispatch
 - demonstrates how to work against a mocked `addTodo` backend endpoint
 
 ## 26. Normalizing API Responses with `normalizr`
-- WIP
+- the `normalizr` utility can be used to normalize server responses
+- this helps reduce code and avoid writing special case handlers in reducers
 
 ## 27. Updating Data on the Server
 - WIP
