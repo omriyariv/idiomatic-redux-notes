@@ -129,7 +129,7 @@ store => next => enhancedDispatch
 - using `catch` instead of using the rejection callback has a downside where it will also catch any errors thrown by reducers or components that are subscribed to the store
 
 ## 25. Creating Data on the Server
-- WIP
+- demonstrates how to work against a mocked `addTodo` backend endpoint
 
 ## 26. Normalizing API Responses with `normalizr`
 - WIP
